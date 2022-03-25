@@ -52,6 +52,7 @@ public class ApiAction extends BaseController {
                 m.put("id", Integer.toString(u.getId()));
                 m.put("login", u.getLogin());
                 m.put("email", u.getEmail());
+                m.put("email", u.getEmail());
                 m.put("role", u.getRole());
 
                 userList.add(m);
