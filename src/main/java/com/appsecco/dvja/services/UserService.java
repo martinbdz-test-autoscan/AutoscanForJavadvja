@@ -42,6 +42,10 @@ public class UserService {
     public User find(int id) {
         return entityManager.find(User.class, id);
     }
+    
+    public User findNew(int newId) {
+        return entityManager.find(User.class, newId);
+    }
 
     public boolean checkPassword(User user, String password) {
         if(user == null)
