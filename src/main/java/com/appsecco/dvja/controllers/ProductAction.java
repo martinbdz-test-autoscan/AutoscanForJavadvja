@@ -68,6 +68,10 @@ public class ProductAction extends BaseController {
         return SUCCESS;
     }
 
+    public String listMore() {
+        return SUCCESS;
+    }
+
     public String execute() {
         if(!StringUtils.isEmpty(getProductId()) && (product == null)) {
             product = productService.find(Integer.parseInt(getProductId()));
